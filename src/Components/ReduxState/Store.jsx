@@ -1,9 +1,8 @@
-import React from 'react'
+import { configureStore } from "@reduxjs/toolkit";
+import myReducer from "./Reduxstate"
 
-const Store = () => {
-  return (
-    <div>Store</div>
-  )
-}
-
-export default Store
+export const store = configureStore({
+    reducer: {
+        myReducer,
+    }
+})
