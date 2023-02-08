@@ -10,7 +10,10 @@ const Reduxstate = createSlice({
   reducers: {
     LoginUser: (state, actions) =>{
         state.current = actions.payload
-    }
+    },
+    LogoutUser: (state) =>{
+        state.current = null;
+    },
   }
 });
 
